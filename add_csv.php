@@ -1,5 +1,5 @@
 <?php
-$f1 = "./report-20171113133759_shenshan.csv";
+$f1 = "./_shenshan.csv";
 $f2 = "./shenshan.csv";
 $f_out = "./shenshan_merge.csv";
 $f_jg_in = fopen($f1, "r");
