@@ -34,7 +34,7 @@ foreach (@a)
 
 	if ( !(-d $lpdir) )
 	{
-		say "$lpdir" if $lpdir =~ m/(.*)?\.pl$/ ;
+		say "$lpdir" if $lpdir =~ m/(.*)?\.pl$/ ;	#only print perl file in the directory.
 	}
 	elsif( -d $lpdir ? ($lpdir !~ m/^(.*)?\/\.+$/): 0)#&& (-d $_) )
 	{
@@ -54,7 +54,7 @@ foreach (@a)
 				next NEXT_ROUND;
 			}
 			#print "\n|--------------------------------------------|\n";
-			say $path if $path =~ m/(.*)?\.sample$/;
+			say $path if $path =~ m/(.*)?\.sample$/;	#only print .sample file in the sub directory.
 			#print "$path is a file!\n";
 			#$path =~ tr/\//_/;
 			#`echo $path $dout/$fname`;
